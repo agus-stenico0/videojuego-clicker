@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appwise Clicker</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="juego-contenedor">
+        <header>
+            <h1>⛏️ Appwise Clicker</h1>
+            <button id="btn-reset" class="btn-peligro">Borrar Partida</button>
+        </header>
+
+        <main>
+            <section class="area-click">
+                <div class="marcador">
+                    <p>Monedas: <span id="display-monedas">0</span> 🪙</p>
+                    <small>Generando <span id="display-mps">0</span> 🪙 por segundo</small>
+                </div>
+                
+                <button id="btn-minar" class="moneda-gigante">🪙</button>
+            </section>
+
+            <section class="tienda">
+                <h2>🛒 Tienda de Mejoras</h2>
+                
+                <div class="item-tienda">
+                    <div>
+                        <h3>🤖 Auto-Minero</h3>
+                        <p>Genera 1 moneda automática por segundo.</p>
+                        <small>Tienes: <span id="display-mineros">0</span></small>
+                    </div>
+                    <button id="btn-comprar-minero">
+                        Comprar (Cuesta <span id="display-costo">10</span> 🪙)
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/juego.js"></script>
+</body>
+</html>
