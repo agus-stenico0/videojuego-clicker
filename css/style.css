@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #e94560;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.juego-contenedor {
+  background: #16213e;
+  border-radius: 15px;
+  padding: 30px;
+  width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #0f3460;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  gap: 40px;
+}
+
+.area-click {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.marcador {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.marcador small {
+  display: block;
+  font-size: 1rem;
+  color: #0f3460;
+  margin-top: 5px;
+}
+
+.moneda-gigante {
+  font-size: 6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.05s ease;
+  user-select: none;
+}
+
+.moneda-gigante:active {
+  transform: scale(0.9);
+}
+
+.tienda {
+  flex: 1;
+  background: #0f3460;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.tienda h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.item-tienda {
+  background: #1a1a2e;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background: #e94560;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #ff2e63;
+}
+button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.btn-peligro {
+  background: #c70039;
+}
+.btn-peligro:hover {
+  background: #900c3f;
+}
